@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #2a2e35;
+  color: #b2becd;
+}
+
+form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+input,
+button {
+  font: inherit;
+  border: none;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+  width: 90%;
+}
+
+input {
+  font-size: 2.5rem;
+  min-width: 70vw;
+  margin: 1rem 0;
+  padding: 0.4em 0.3em;
+  font-weight: normal;
+}
+
+button {
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #55c57a;
+  color: #fff;
+}
+
+@media only screen and (max-width: 62.5em) {
+  /* 1000px */
+
+  label {
+    font-size: 3rem;
+  }
+
+  input,
+  button,
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  /* 600px */
+  input {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  /* 600px */
+  label {
+    font-size: 2.2rem;
+  }
+
+  input,
+  button,
+  p {
+    font-size: 1.3rem;
+  }
+}
